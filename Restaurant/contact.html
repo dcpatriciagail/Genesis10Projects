@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Cafe Demitasse - Contact</title>
+<style>
+div.a {text-align: center;}
+</style>
+</head>
+
+<body>
+<header>
+<div class="a">
+ <h1> Cafe Demitasse</h1> </div>
+</header>
+</div>
+
+<!--insert link for home, Menu, Contact Us-->
+<hr />
+<p> <a href ="index.html"> Home</a> &ensp;
+	<a href="menu.html">Menu</a> &ensp;
+	<a href="contact.html">Contact Us </a></p>
+<hr />
+
+<br />
+<!-- start of the stuff to do -->
+<div class="a">
+<form action ="submit.html" method="POST">
+
+<!-- TEXT INPUT BELOW-->
+Name: <input type="text" name="fullname" />
+<p>Email: <input type="text" name="email" /></p>
+<p>Phone: <input type="number" name="phone" /></p>
+
+<!-- TEXT SELECT TAG dropdown BELOW-->
+<p>Reason for Inquiry: 
+<select name="reason">
+	<option value="catering" selected>Catering</option>
+	<option value="private">Private Party</option>
+	<option value="feedback"> Feedback</option>
+	<option value="other"> Other </option></p>
+	
+</select>
+
+
+<!-- TEXT AREA BELOW-->
+ <p>Additional Information: <textarea name="Information" rows="6">
+
+</textarea>
+</p>
+
+<!-- TEXT RADIO BELOW-->
+<p> 
+Have you been to the restaurant? 
+<input type="radio" name="answer" value="NO" checked/>No
+<input type="radio" name="answer" value="YES">Yes
+</p>
+
+<!-- CHECKBOX BELOW-->
+<p>Best days to contact you: 
+ <input type="checkbox" name="days" value="Monday" /> M
+ <input type="checkbox" name="days" value="Tuesday" />T
+ <input type="checkbox" name="days" value="Wednesday" />W
+ <input type="checkbox" name="days" value="Thursday" />Th
+ <input type="checkbox" name="days" value="Friday" />F
+	
+	
+</p>
+<input type="submit" value="Send Request"><br />
+</form>
+<br />
+<br />
+
+</body>
+<hr />
+<footer>
+<div class="a">
+<p> 1010 Kirby Dr Houston TX 95116</p>
+<p> 800-555-2121</p>
+</div>
+</footer>
+
+</html>
