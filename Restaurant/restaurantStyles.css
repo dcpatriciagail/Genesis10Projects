@@ -1,0 +1,25 @@
+/*
+Creator: Patricia Dela Cruz		
+Date created: 9/16/2018
+Date last modified: 9/16/2018
+*/
+
+header {
+	background-color: lightblue;
+	color: white;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+
+footer {
+	background-color: mistyrose;
+	color: indianred;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+
+}
+body {
+	background-color: whitesmoke;
+}
