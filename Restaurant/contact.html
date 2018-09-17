@@ -9,19 +9,51 @@ Most recent revision:
 <head>
 <title>Contact Us</title>
 <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 <style>
-.a {text-align: center;}
+	
+div.form {
+    text-align: center;
+	display: block;
+	}
+
+form {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	}
+	
+label{
+	display: block;
+	float: left;
+	font-weight: bold;
+	margin-right:  10px;
+	text-align: right;
+	width: 250px;
+	}
+
+input[type=submit] {
+	text-align: center;
+	cursor: pointer;
+	background-color: lightgray;
+	padding: 5px 5px;
+	border-radius: 4px;
+	display: block;
+	margin-left: 60%;
+	margin-right: 0;
+}	
+		
 </style>
 </head>
 
 <body>
 <header>
 
- <h1 class="a"> Dulce</h1> 
+ <h1> Dulce</h1> 
 </header>
-</div>
 
-<!--insert link for home, Menu, Contact Us-->
+<!--NAVIGATION-->
 <hr />
 <nav>
 <p> <a href ="index.html"> Home</a> &ensp;
@@ -30,57 +62,67 @@ Most recent revision:
 <hr />
 </nav>
 <br />
-<!-- start of the stuff to do -->
+<!-- start -->
+<div class="form">
 
-<form action ="submit.html" method="POST" class="a">
+<form name="Form1" action ="submit.html" method="POST" class="a">
 
 <!-- TEXT INPUT BELOW-->
-Name: <input type="text" name="fullname" />
-<p>Email: <input type="text" name="email" /></p>
-<p>Phone: <input type="number" name="phone" /></p>
+<p><label for="Name">Name: </label>
+<input type="text" id="Name" /></p>
+
+
+<p><label for="email">Email: </label>
+<input type="text" id="email" /></p>
+
+
+<p><label for="phone">Phone: </label>
+<input type="number" id="phone" /></p>
 
 <!-- TEXT SELECT TAG dropdown BELOW-->
-<p>Reason for Inquiry: 
-<select name="reason">
-	<option value="catering" selected>Catering</option>
-	<option value="private">Private Party</option>
-	<option value="feedback"> Feedback</option>
-	<option value="other"> Other </option></p>
+<p>	 <label for="reason">Reason for Inquiry:</label>
 	
+	<select>
+  <option value="Catering" selected>Catering</option>
+  <option value="private">Private Party</option>
+  <option value="feedback">Feedback</option>
+  <option value="other" >Other</option> </p>
 </select>
 
-
 <!-- TEXT AREA BELOW-->
- <p>Additional Information: <textarea name="Information" rows="6">
+ <p><label for="info">Additional Information: </label>
+ <textarea name="Information">
+</textarea></p>
 
-</textarea>
-</p>
 
 <!-- TEXT RADIO BELOW-->
-<p> 
-Have you been to the restaurant? 
-<input type="radio" name="answer" value="NO" checked/>No
-<input type="radio" name="answer" value="YES">Yes
+
+<p><label for ="restaurant"> Have you been to the restaurant?</label>
+	<input type="radio" name="answer" value="No"  checked /> No
+	<input type="radio" name="answer" value="Yes" /> Yes
 </p>
 
+
 <!-- CHECKBOX BELOW-->
-<p>Best days to contact you: 
+
+<p><label for="days">Best days to contact you: </label>
  <input type="checkbox" name="days" value="Monday" /> M
  <input type="checkbox" name="days" value="Tuesday" />T
  <input type="checkbox" name="days" value="Wednesday" />W
  <input type="checkbox" name="days" value="Thursday" />Th
- <input type="checkbox" name="days" value="Friday" />F
+ <input type="checkbox" name="days" value="Friday" />F</p>
 	
 	
-</p>
-<input type="submit" value="Send Request"><br />
+<input type="submit" value="Send Request" id="sendBotton"  ><br />
+
 </form>
+</div>
 <br />
 <br />
 
 </body>
 
-<footer class="a">
+<footer>
 <hr />
 <p> 1010 Kirby Dr, Houston, TX, 95116</p>
 <p> 800-555-2121</p>
