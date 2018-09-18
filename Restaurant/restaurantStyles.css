@@ -26,17 +26,17 @@ footer {
 }
 body {
 	background-color: whitesmoke;
+	
 }
+
 /* unvisited link */
 a:link {
-   color: red;
-   text-decoration: none;
-	
+   color: default;
 }
 
 /* visited link */
 a:visited {
- color: black;
+ color: red;
 }
 
 /* mouse over link */
@@ -46,5 +46,5 @@ a:hover {
 
 /* selected link */
 a:active {
-    text-decoration: none;
+	text-decoration: none;
 }

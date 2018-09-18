@@ -6,9 +6,20 @@ Most recent revision:
 -->
 <html>
 <head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <title>Menu </title>
-<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+			<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+				<link rel="stylesheet" 
+					href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+					integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+					crossorigin="anonymous">
+
+				<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+				<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 <style>
 	td {text-align: center;
 		vertical-align: top;
@@ -17,7 +28,7 @@ Most recent revision:
 	div.title {font-size: large; 
 				font-weight: bold;
 				}
-	table {width: 100%;
+	.first {width: 100%;
 
 			background-color: seashell;
 			border: 2px dashed saddlebrown;
@@ -25,7 +36,20 @@ Most recent revision:
 			margin: 12px 0;
 			box-sizing: border-box;
 		}
-			
+	.drinks {	text-align: left;
+				}
+	.second { width: 50%
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+			background-color: seashell;
+			border: 2px dashed saddlebrown;
+			box-sizing: border-box;
+	}
+	th { font-size: 150%;
+		margin-top: 0;
+	}
 	
 </style>
 </head>
@@ -46,7 +70,7 @@ Most recent revision:
 
 <!-- start of the table-->
 <br />
-<table>
+<table class="first">
 
 	<tr>
 		<td> 
@@ -119,9 +143,45 @@ Most recent revision:
 </table>
 <br />
 <br />
+<table class="second">
+	<tr>
+		<th colspan="2"> Beverages </th>
+	</tr>
+	<tr>
+		<td class="drinks"> Root Beer</td>
+		<td> $3.00</td>
+		
+	</tr>
+	<tr>
+		<td class = "drinks"> Bottled Water</td>
+		<td> $1.25</td>
+	</tr>
+	<tr>
+		<td class = "drinks"> Lemonade</td>
+		<td> $1.00</td>
+	</tr>
+	<tr>
+		<td class = "drinks"> Iced Tea </td>
+		<td> $1.25</td>
+	</tr>
+		
 
+</table>
+
+
+<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+					integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+					crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+					integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+					crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+					integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+					crossorigin="anonymous"></script>
 </body>
-
+<br />
+<br />
 <footer>
 <hr />
 <p class="a"> 1010 Kirby Dr, Houston, TX, 95116</p>
