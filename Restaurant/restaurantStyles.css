@@ -5,7 +5,7 @@ Date last modified: 9/16/2018
 */
 
 header {
-	background-color: powderblue;
+	background-color: lightskyblue;
 	color: saddlebrown;
 	height: 100px;
 	text-align: center;
@@ -29,14 +29,20 @@ body {
 	
 }
 
+.btn {
+	background-color: Wheat;
+	color: saddlebrown;
+	
+}
+
 /* unvisited link */
 a:link {
-   color: default;
+   color: black;
 }
 
 /* visited link */
 a:visited {
- color: red;
+ color: Dimgray;
 }
 
 /* mouse over link */
