@@ -5,14 +5,17 @@ Date last modified: 9/16/2018
 */
 
 header {
-	background-color: lightblue;
-	color: white;
+	background-color: powderblue;
+	color: saddlebrown;
 	height: 100px;
 	text-align: center;
 	padding: 30px 10px 20px 10px;
 	font-family: "Abril Fatface", cursive;
+	
 }
-
+h1 {
+	font-size: 3.5em;
+}
 footer {
 	background-color: mistyrose;
 	color: indianred;
@@ -23,4 +26,25 @@ footer {
 }
 body {
 	background-color: whitesmoke;
+}
+/* unvisited link */
+a:link {
+   color: red;
+   text-decoration: none;
+	
+}
+
+/* visited link */
+a:visited {
+ color: black;
+}
+
+/* mouse over link */
+a:hover {
+    font-weight: bold;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
 }

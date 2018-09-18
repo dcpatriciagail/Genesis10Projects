@@ -27,7 +27,6 @@ form {
 label{
 	display: block;
 	float: left;
-	font-weight: bold;
 	margin-right:  10px;
 	text-align: right;
 	width: 250px;
@@ -43,7 +42,22 @@ input[type=submit] {
 	margin-left: 60%;
 	margin-right: 0;
 }	
-		
+
+.warning {
+	font-weight: bold;
+}
+input[type=text] {
+	width: 200px;
+	}
+input[type=number] {
+	width: 200px;
+	}
+textarea {
+    height: 100px;
+	width: 200px;
+}	
+select { width: 200px;
+}
 </style>
 </head>
 
@@ -68,22 +82,22 @@ input[type=submit] {
 <form name="Form1" action ="submit.html" method="POST" class="a">
 
 <!-- TEXT INPUT BELOW-->
-<p><label for="Name">Name: </label>
-<input type="text" id="Name" /></p>
+<p class ="warning"><label for="Name">Name: </label>
+<input type="text" id="Name" required /></p>
 
 
-<p><label for="email">Email: </label>
-<input type="text" id="email" /></p>
+<p class="warning"><label for="email">Email: </label>
+<input type="text" id="email" required /></p>
 
 
-<p><label for="phone">Phone: </label>
-<input type="number" id="phone" /></p>
+<p class="warning"><label for="phone">Phone: </label>
+<input type="number" id="phone" required /></p>
 
 <!-- TEXT SELECT TAG dropdown BELOW-->
-<p>	 <label for="reason">Reason for Inquiry:</label>
+<p class="warning">	 <label for="reason">Reason for Inquiry:</label>
 	
 	<select>
-  <option value="Catering" selected>Catering</option>
+  <option value="Catering" selected  >Catering</option>
   <option value="private">Private Party</option>
   <option value="feedback">Feedback</option>
   <option value="other" >Other</option> </p>
@@ -97,24 +111,24 @@ input[type=submit] {
 
 <!-- TEXT RADIO BELOW-->
 
-<p><label for ="restaurant"> Have you been to the restaurant?</label>
-	<input type="radio" name="answer" value="No"  checked /> No
+<p class="warning"><label for ="restaurant"> Have you been to the restaurant?</label>
+	</p><input type="radio" name="answer" value="No"  checked /> No
 	<input type="radio" name="answer" value="Yes" /> Yes
-</p>
+
 
 
 <!-- CHECKBOX BELOW-->
 
-<p><label for="days">Best days to contact you: </label>
- <input type="checkbox" name="days" value="Monday" /> M
+<p class="warning"><label for="days">Best days to contact you: </label></p>
+ <input type="checkbox" name="days" value="Monday"  /> M
  <input type="checkbox" name="days" value="Tuesday" />T
  <input type="checkbox" name="days" value="Wednesday" />W
  <input type="checkbox" name="days" value="Thursday" />Th
- <input type="checkbox" name="days" value="Friday" />F</p>
-	
-	
+ <input type="checkbox" name="days" value="Friday" />F <br />
+ 
+<p>	
 <input type="submit" value="Send Request" id="sendBotton"  ><br />
-
+</p>
 </form>
 </div>
 <br />
