@@ -5,7 +5,7 @@ Date last modified: 9/16/2018
 */
 
 header {
-	background-color: lightskyblue;
+	background-color: mistyrose;
 	color: saddlebrown;
 	height: 100px;
 	text-align: center;
@@ -17,7 +17,7 @@ h1 {
 	font-size: 3.5em;
 }
 footer {
-	background-color: mistyrose;
+	background-color: powderblue;
 	color: indianred;
 	height: 100px;
 	text-align: center;

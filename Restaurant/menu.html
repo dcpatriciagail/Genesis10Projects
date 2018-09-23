@@ -20,42 +20,24 @@ Most recent revision:
 
 				<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 				<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
-	td {text-align: center;
-		vertical-align: top;
-		padding: 5px 10px;
-			}
+	
 	div.title {font-size: large; 
 				font-weight: bold;
 				color: saddlebrown;
 				}
-	.first {width: 100%;
-
-			background-color: seashell;
+	
+	 .drinks{	text-align: center;
+				
+				} 
+	.food, .bev { background-color: seashell;
 			border: 2px dashed saddlebrown;
 			padding: 8px 8px;
-			margin: 12px 0;
-			box-sizing: border-box;
-		}
-	.drinks {	text-align: left;
-				width: 200px;
+			margin: 20px 0;
+			
 				}
-	.second { width: 50%
-			display: inline-block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 5px
-			text-align: left;
-			padding: 10px;
-			background-color: seashell;
-			border: 3px dashed pink;
-			box-sizing: border-box;
-	}
-	th { font-size: 150%;
-		margin-top: 0;
-		width: 70%;
-		text-align:  center;
-	}
+			
 	
 	
 </style>
@@ -64,76 +46,74 @@ Most recent revision:
 <body>
 <header>
 
- <h1> Dulce</h1> 
+ <h1> Cafe Demitasse</h1> 
 </header>
 
 <hr />
 <nav>
-<p> <a class="btn badge-pill" href ="index.html"> Home</a> &ensp; 
+<p> <a class="btn badge-pill" href ="index.html"><i class="material-icons">home</i></a> &ensp; 
 	<a class="btn badge-pill" href="menu.html">Menu</a> &ensp; 
 	<a class="btn badge-pill" href="contact.html">Contact Us </a> &ensp; 
 <hr />
 </nav>
 
-<!-- start of the table-->
+<!-- start of the menu-->
 <br />
-<table class="first">
 
-	<tr>
-		<td> 
-		
+<div class="container text-center">
+	<div class="food">
+	<div class="row">
+		<div class = "col-lg-4">
 			<div class="title"> Burger and Fries</div>
 			An American Classic!<br />
 			Your choice - with or without cheese <br />
 			pickle, onion, tomato, and lettuce<br />
 			Served with our famous thich cut<br />
 			french fries<br />
-			$7.95
-		
-		</td>
-		<td>
-		
+			$7.95<br />
+			     <br />
+		</div>	
+		<br />
+		<div class = "col-lg-4">
 			<div class="title">Hot Dog and Chips</div>
 			A Summer Classic!<br />
 			Your Choice - White or wheat bun<br />
 			Relish, mustard, and ketchup<br />
 			Served with our house-made chips<br />
 			$7.95<br />
-		
-		</td>
-		<td>
-		
+		</div>	
+		<br />
+		<div class = "col-lg-4">
 			<div class="title">Italian Sausage and Peppers</div>
 			An All-Time Favorite!<br />
 			Your Choice - Mild or spicy Cole Slaw<br />
 			Served with garlic mashers<br />
 			$10.95<br />
-		
-		</td>
-	</tr>
-	<tr>
-		<td>
-		
+		</div>	
+		<br />
+	</div>	
+	
+	<div class="row">
+		<div class = "col-lg-4">
 		<div class="title">Tenderloin Sandwich and Chips</div>
 			Really Hits the Spot!<br />
 			Pickle, onion, tomato, and lettuce<br />
 			Served with our house-made chips<br />
-			$8.95<br />
+			$8.95
 		
-		
-		</td>
-		<td>
-		
+		</div>
+		<br />
+		<div class = "col-lg-4">
 		<div class="title">House Salad</div>
 			On the Lighter Side<br />
 			Your choice - with or  without cheese<br />
 			Iceberg lettuce, tomatoes, peppers<br />
 			Thousand Island or Ranch<br />
 			Dressing Served with a dinner roll<br />
-			$6.95<br />
-		</td>
-		<td>
-		
+			$6.95
+		<br />	
+		</div>
+		<div class = "col-lg-4">
 		<div class="title">Brisket Sandwich and Fries</div>
 			A Taste of Texas!<br />
 			Smoked Brisket on thick-cut<br />
@@ -141,39 +121,51 @@ Most recent revision:
 			Cole Slaw <br />
 			Served with our famous thick-cut<br />
 			french fries<br />
-			$7.95<br />
-		
-		
-		</td>
-	</tr>
-
-</table>
-<br />
-<br />
-<table class="second">
-	<tr>
-		<th colspan="2"> Beverages </th>
-	</tr>
-	<tr>
-		<td class="drinks"> Root Beer</td>
-		<td> $3.00</td>
-		
-	</tr>
-	<tr>
-		<td class = "drinks"> Bottled Water</td>
-		<td> $1.25</td>
-	</tr>
-	<tr>
-		<td class = "drinks"> Lemonade</td>
-		<td> $1.00</td>
-	</tr>
-	<tr>
-		<td class = "drinks"> Iced Tea </td>
-		<td> $1.25</td>
-	</tr>
-		
-
-</table>
+			$7.95
+		<br />
+		</div>
+	</div>	
+	</div>
+	<div class="bev">
+	<div class="row">
+		<div class = "col-lg-12">
+		<h4> Beverages</h4>
+		</div>
+	</div>	
+	<div class="row">
+		<div class = "col-lg-6">
+			<div class="drinks"> Root Beer</div>
+		</div>	
+		<div class = "col-lg-6">
+		 $3.00
+		 </div>
+	</div>
+	<div class="row">
+		<div class = "col-lg-6">	
+			<div class = "drinks"> Bottled Water</div>
+		</div>
+		<div class = "col-lg-6">
+		 $1.25
+		 </div>
+	</div>
+	<div class="row">
+		<div class = "col-lg-6">	 
+			<div class = "drinks"> Lemonade</div>
+		</div>
+		<div class = "col-lg-6">
+		 $1.00
+		</div>
+	</div>
+	<div class="row">
+		<div class = "col-lg-6">	
+			<div class = "drinks"> Iced Tea </div>
+		</div>
+		<div class = "col-lg-6">
+		 $1.25
+		</div>
+	</div>
+	</div>
+</div>
 
 
 <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
@@ -191,9 +183,8 @@ Most recent revision:
 <br />
 <footer>
 
-<p class="a"> 1010 Kirby Dr, Houston, TX, 95116</p>
-<p class="a"> 800-555-2121</p>
-</div>
+<p> 1010 Kirby Dr, Houston, TX, 95116 <br /> 800-555-2121</p>
+
 </footer>
 
 </html>
