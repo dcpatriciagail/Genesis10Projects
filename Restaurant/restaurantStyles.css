@@ -6,15 +6,25 @@ Date last modified: 9/16/2018
 
 header {
 	background-color: mistyrose;
-	color: saddlebrown;
-	height: 100px;
-	text-align: center;
-	padding: 30px 10px 20px 10px;
-	font-family: "Abril Fatface", cursive;
+	height: 150px;
+	padding: 20px 10px 20px 10px;
+	
 	
 }
+
+.cafeName  {
+	color: saddlebrown;
+	font-family: 'Gochi Hand', cursive;
+	text-align: left;
+}
+
+.newLocation {
+	font-family: 'Vast Shadow', cursive;
+	color: indianred;
+	text-align: center;
+}
 h1 {
-	font-size: 3.5em;
+	font-size: 4em;
 }
 footer {
 	background-color: powderblue;
