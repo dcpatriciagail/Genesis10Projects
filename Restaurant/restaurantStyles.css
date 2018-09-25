@@ -5,27 +5,27 @@ Date last modified: 9/16/2018
 */
 
 header {
-	background-color: mistyrose;
-	height: 200px;
+	background-color: #F9F9F9;
+	height: 180px;
 	padding: 20px 10px 10px 10px;
 	
 	
 }
 
 .cafeName  {
-	color: Saddlebrown ;
+	color: #bfbf7f ;
 	font-family: 'Gochi Hand', cursive;
-	text-align: center;
+	text-align: left;
 	
 }
 
 .newLocation {
-	font-family: 'Vast Shadow', cursive;
-	color: indianred;
+	font-family: 'Bubblegum Sans', cursive;
+	color: #0a878a;
 	text-align: center;
 }
 h1 {
-	font-size: 100px;
+	font-size: 3.5em;
 }
 footer {
 	background-color: powderblue;
@@ -36,7 +36,9 @@ footer {
 
 }
 body {
-	background-color: Cornsilk;
+	background-image: url("Photos/bg1.jpg");
+	backround-repeat: repeat;
+	background-color: #cccccc;
 	
 }
 
@@ -67,8 +69,8 @@ a:active {
 }
 nav  {
 	
-	background-color: Cornsilk;
-			border: 2px dashed saddlebrown;
+	
+			border: 2px dashed #bfbf7f;
 			border-radius: 20px;
 			padding: 8px 8px;
 			margin: 20px 0;
