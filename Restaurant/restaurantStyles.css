@@ -3,30 +3,38 @@ Creator: Patricia Dela Cruz
 Date created: 9/16/2018
 Date last modified: 9/16/2018
 */
-
-header {
-	background-color: #F9F9F9;
-	height: 180px;
-	padding: 20px 10px 10px 10px;
-	
-	
+.main {
+	padding-top: 10px;
+}
+index-intro {
+	width: 100%
 }
 
-.cafeName  {
-	color: #bfbf7f ;
+.index-intro .jumbotron {
+	padding: 70px 20px;
+	margin: 0px;
+	background-image: url(Photos/goldconfetti.jpg);
+	background-size: cover;
+}
+
+.index-intro .jumbotron h1{
+	font-size: 60px;
+	color: #0a878a ;
 	font-family: 'Gochi Hand', cursive;
-	text-align: left;
-	
 }
 
-.newLocation {
+.index-intro .jumbotron h2{
 	font-family: 'Bubblegum Sans', cursive;
-	color: #0a878a;
-	text-align: center;
+	color: #bfbf7f;
+	font-size: 35px;
+	
 }
-h1 {
-	font-size: 3.5em;
+.description {
+
+	color: #808080 ;
+	font-size: 20px;
 }
+
 footer {
 	background-color: powderblue;
 	color: white;
@@ -42,11 +50,7 @@ body {
 	
 }
 
-.btn {
-	background-color: Wheat;
-	color: saddlebrown;
-	
-}
+
 
 /* unvisited link */
 a:link {
@@ -68,10 +72,9 @@ a:active {
 	text-decoration: none;
 }
 nav  {
-	
-	
-			border: 2px dashed #bfbf7f;
-			border-radius: 20px;
-			padding: 8px 8px;
-			margin: 20px 0;
+		border: 2px dashed #bfbf7f;
+		border-radius: 20px;
+		padding: 8px 8px;
+		margin: 20px 0;
+		font-family: 'Bubblegum Sans', cursive;
 }
