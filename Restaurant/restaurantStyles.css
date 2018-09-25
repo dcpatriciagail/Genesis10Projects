@@ -6,16 +6,17 @@ Date last modified: 9/16/2018
 
 header {
 	background-color: mistyrose;
-	height: 150px;
-	padding: 20px 10px 20px 10px;
+	height: 200px;
+	padding: 20px 10px 10px 10px;
 	
 	
 }
 
 .cafeName  {
-	color: saddlebrown;
+	color: Saddlebrown ;
 	font-family: 'Gochi Hand', cursive;
-	text-align: left;
+	text-align: center;
+	
 }
 
 .newLocation {
@@ -24,18 +25,18 @@ header {
 	text-align: center;
 }
 h1 {
-	font-size: 4em;
+	font-size: 100px;
 }
 footer {
 	background-color: powderblue;
-	color: indianred;
+	color: white;
 	height: 100px;
 	text-align: center;
 	padding: 30px 10px 20px 10px;
 
 }
 body {
-	background-color: whitesmoke;
+	background-color: Cornsilk;
 	
 }
 
@@ -63,4 +64,12 @@ a:hover {
 /* selected link */
 a:active {
 	text-decoration: none;
+}
+nav  {
+	
+	background-color: Cornsilk;
+			border: 2px dashed saddlebrown;
+			border-radius: 20px;
+			padding: 8px 8px;
+			margin: 20px 0;
 }
