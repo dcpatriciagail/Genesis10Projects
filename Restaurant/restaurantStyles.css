@@ -3,6 +3,12 @@ Creator: Patricia Dela Cruz
 Date created: 9/16/2018
 Date last modified: 9/16/2018
 */
+body {
+	background-image:url("Photos/bg1.jpeg");
+	backround-repeat: repeat;
+	background-color: #ffffd6;
+	
+}
 .main {
 	padding-top: 10px;
 }
@@ -44,12 +50,7 @@ footer {
 	padding: 30px 10px 20px 10px;
 
 }
-body {
-	background-image:url("Photos/bg1.jpg");
-	backround-repeat: repeat;
-	background-color: #cccccc;
-	
-}
+
 
 .btn {
  	background-color: #bfbf7f;
