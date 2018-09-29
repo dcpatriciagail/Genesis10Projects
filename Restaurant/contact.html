@@ -31,9 +31,12 @@ Most recent revision:
 <style>
 .warning {
 	font-weight: bold;
+	text-align: right;
 }
 
-
+.other {
+	text-align: right;
+}
 
 </style>
 </head>
@@ -41,10 +44,8 @@ Most recent revision:
 <body>
 
 
-<section class ="main">
-	<article class = "index-intro">
-		<div class="container">
-			<div class = "jumbotron">
+<div class="container">
+			<header class = "jumbotron">
 				<div class = "row">
 					<div class = "col-sm-12">	
 							<br />
@@ -57,10 +58,8 @@ Most recent revision:
 						<h2> Opening a New Location!</h2>
 					</div>
 				</div>
-			</div>
+			</header>
 		</div>
-	</article>
-</section>
 
 
 <!--NAVIGATION-->
@@ -173,7 +172,7 @@ Most recent revision:
   </div>
   
   <div class="form-group row">
-    <label for="info" class="col-sm-4 col-form-label">Additional Information:</label>
+    <label for="info" class="col-sm-4 col-form-label"><div class="other">Additional Information:</div></label>
 	<div class="col-sm-8">
     <textarea class="form-control" id="info"></textarea>
 	</div>
