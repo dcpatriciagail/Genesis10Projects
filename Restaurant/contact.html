@@ -33,6 +33,13 @@ Most recent revision:
 	font-weight: bold;
 }
 
+label {
+    text-align: right;
+}
+
+legend {
+    text-align: right;
+}
 
 
 </style>
@@ -41,8 +48,10 @@ Most recent revision:
 <body>
 
 
-<div class="container">
-			<header class = "jumbotron">
+<section class ="main">
+	<article class = "index-intro">
+		<div class="container">
+			<div class = "jumbotron">
 				<div class = "row">
 					<div class = "col-sm-12">	
 							<br />
@@ -55,8 +64,10 @@ Most recent revision:
 						<h2> Opening a New Location!</h2>
 					</div>
 				</div>
-			</header>
+			</div>
 		</div>
+	</article>
+</section>
 
 
 <!--NAVIGATION-->
@@ -124,8 +135,9 @@ Most recent revision:
 
   <form class = "needs-validation" novalidate>
   <div class="form-group row">
+	
 	<label for="name" class="col-sm-4 col-form-label"><div class="warning">Name:</div></label>
-    <div class="col-sm-8">
+    <div class="col-sm-5">
       <input type="text" class="form-control" id="name" required>
 	  <div class = "valid-feedback"> 
 	  Valid
@@ -135,8 +147,9 @@ Most recent revision:
   
   
   <div class="form-group row">
+	
     <label for="emailAdd" class="col-sm-4 col-form-label"><div class="warning">Email:</div></label>
-    <div class="col-sm-8">
+    <div class="col-sm-5">
       <input type="email" class="form-control" id="emailAdd" required>
 	  <div class="valid-feedback">
         Valid
@@ -144,8 +157,9 @@ Most recent revision:
     </div>
   </div>
   <div class="form-group row">
+
     <label for="phoneNum" class="col-sm-4 col-form-label"><div class="warning">Phone:</div></label>
-    <div class="col-sm-8">
+    <div class="col-sm-5">
       <input type="number" class="form-control" id="phoneNum" required>
 	  <div class = "valid-feedback"> 
 	  Valid
@@ -155,9 +169,9 @@ Most recent revision:
   
   
  <div class="form-group row">
-	
+
     <label for="reason" class="col-sm-4 col-form-label"><div class="warning">Reason for Inquiry:</div></label>
-	<div class="col-sm-8">
+	<div class="col-sm-5">
     <select class="form-control" id="reason">
      
       <option selected>Catering</option>
@@ -169,14 +183,16 @@ Most recent revision:
   </div>
   
   <div class="form-group row">
-    <label for="info" class="col-sm-4 col-form-label"><div class="other">Additional Information:</div></label>
-	<div class="col-sm-8">
-    <textarea class="form-control" id="info"></textarea>
+	
+    <label for="info" class="col-sm-4 col-form-label">Additional Information:</label>
+	<div class="col-sm-5">
+    <textarea class="form-control" id="info" rows ="5"></textarea>
 	</div>
   </div> 
   
   <fieldset class="form-group">
     <div class="row">
+	
       <legend class="col-form-label col-sm-4"><div class="warning">Have you been to the restaurant?</div></legend>
       <div class="col-sm-1">
         <div class="form-check form-check-inline">
@@ -196,9 +212,12 @@ Most recent revision:
       </div>
     </div>
   </fieldset>
-  <div class="form-group row">
-    <div class="col-sm-4"><div class="warning">Best days to contact you:</div></div>
-    <div class="col-sm-1">
+  
+  <fieldset class="form-group">
+    <div class="row">
+	
+     <legend class="col-form-label col-sm-4"><div class="warning">Best days to contact you:</div></legend>
+     <div class="col-sm-1">
       <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" id="mon">
         <label class="form-check-label" for="mon">
@@ -237,10 +256,10 @@ Most recent revision:
         F
         </label>
       </div>
-	</div>  
-	  
-    </div>
-
+	</div>    
+   </div>
+  </fieldset>
+  
   <div class="form-group row">
 	<div class ="col-sm-4"></div>
     <div class="col-sm-8">
@@ -250,9 +269,7 @@ Most recent revision:
 </form>
 </div>
 
-<script>
-	
-</script>
+
 
 <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
